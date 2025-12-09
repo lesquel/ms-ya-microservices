@@ -5,12 +5,10 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { ReservationsController } from "./reservations.controller";
 import { ReservationsService } from "./reservations.service";
 import { ReservationEntity } from "./entities/reservation.entity";
-import { RedisModule } from "../redis/redis.module";
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([ReservationEntity]),
-    RedisModule,
     // Cliente para emitir eventos a ms-tables
     ClientsModule.registerAsync([
       {
