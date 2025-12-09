@@ -1,0 +1,6 @@
+[submodule "mesa-ya-rest"]
+	path = mesa-ya-rest
+	url = https://github.com/lesquel/mesaYa_Res.git
+[submodule "mesa-ya-res"]
+	path = mesa-ya-res
+	url = https://github.com/lesquel/mesaYa_Res.git
